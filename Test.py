@@ -1,5 +1,5 @@
 import unittest
-from main import Programa
+from Main import Programa
 
 class TestMainMethods(unittest.TestCase):
     def test_interger_range_contains(self):
