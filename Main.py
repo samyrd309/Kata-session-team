@@ -1,6 +1,6 @@
 def integer_range_contains(range, val):
     for i in range:
-        if val == range[i]:
+        if range[i] in val:
             return True
         else:
             return False
