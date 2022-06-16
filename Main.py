@@ -26,10 +26,15 @@ def endPoints(range):
     val = [min1 , max1]
     return val
 
+def Equals(range1, range2):
+    if range1 == range2:
+        return True
+    else:
+        return False
+
 def overlapsRange():
     return
 
-def Equals():
-    return
+
 
     

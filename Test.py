@@ -53,7 +53,27 @@ class TestMainMethods(unittest.TestCase):
         range = [2,3,4,5]
         output = Main.endPoints(range)
         self.assertEqual(output, [2,5])
+        
+    def test_endPoint_2(self):
+        range = [2,3,4,5,6]
+        output = Main.endPoints(range)
+        self.assertEqual(output, [2,6])
+        
+    def test_endPoint_3(self):
+        range = [3,4,5]
+        output = Main.endPoints(range)
+        self.assertEqual(output, [3,5])
 
+    def test_endPoint_4(self):
+        range = [3,4,5,6]
+        output = Main.endPoints(range)
+        self.assertEqual(output, [3,6])
+    
+    def test_Equals_1(self):
+        range1 = []
+        range2 = []
+        output =  Main.Equals(range1, range2)
+        self.assertTrue(output)
         
 if __name__ == '__main__':
     unittest.main()
