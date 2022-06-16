@@ -25,6 +25,12 @@ class TestMainMethods(unittest.TestCase):
         range2 = [7,8,9]
         output = Main.ContainsRange(range1, range2)
         self.assertFalse(output)
+
+    def test_ContainsRange_2(self):
+        range1 = [2,3,4]
+        range2 = [3,4,5,6,7,8,9]
+        output = Main.ContainsRange(range1, range2)
+        self.assertFalse(output)
     
 if __name__ == '__main__':
     unittest.main()

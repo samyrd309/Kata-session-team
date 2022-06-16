@@ -12,8 +12,13 @@ def getAllPoint(range):
 def ContainsRange(range1, range2):
     max1 = max(range1)
     max2 = max(range2)
+    min1 = min(range1)
+    min2 = min(range2)
+    if max2>max1 or min2<min1:
+        return False
+    else :
+        return True
     
-    return
 
 def endPoints():
     return
@@ -23,3 +28,5 @@ def overlapsRange():
 
 def Equals():
     return
+
+    
