@@ -14,14 +14,17 @@ def ContainsRange(range1, range2):
     max2 = max(range2)
     min1 = min(range1)
     min2 = min(range2)
-    if max2>max1 or min2<min1:
+    if max2 > max1 or min2<min1:
         return False
     else :
         return True
     
 
-def endPoints():
-    return
+def endPoints(range):
+    max1 = max(range)
+    min1 = min(range)
+    val = [max1, min1]
+    return val
 
 def overlapsRange():
     return

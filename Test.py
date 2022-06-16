@@ -31,6 +31,27 @@ class TestMainMethods(unittest.TestCase):
         range2 = [3,4,5,6,7,8,9]
         output = Main.ContainsRange(range1, range2)
         self.assertFalse(output)
-    
+        
+    def test_ContainsRange_3(self):
+        range1 = [3,4]
+        range2 = [2,3,4,5,6,7,8,9]
+        output = Main.ContainsRange(range1, range2)
+        self.assertFalse(output)
+        
+    def test_ContainsRange_4(self):
+        range1 = [2,3,4,5,6,7,8,9]
+        range2 = [3,4,5]
+        output = Main.ContainsRange(range1, range2)
+        self.assertTrue(output)
+
+    def test_ContainsRange_5(self):
+        range1 = [3,4,5]
+        range2 = [3,4]
+        output = Main.ContainsRange(range1, range2)
+        self.assertTrue(output)
+    def testr_endPoint(self):
+        output = Main.endPoints()
+        self.assertEqual(output, [2,5])
+        
 if __name__ == '__main__':
     unittest.main()
