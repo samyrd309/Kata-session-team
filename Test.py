@@ -49,9 +49,11 @@ class TestMainMethods(unittest.TestCase):
         range2 = [3,4]
         output = Main.ContainsRange(range1, range2)
         self.assertTrue(output)
-    def testr_endPoint(self):
-        output = Main.endPoints()
+    def test_endPoint_1(self):
+        range = [2,3,4,5]
+        output = Main.endPoints(range)
         self.assertEqual(output, [2,5])
+
         
 if __name__ == '__main__':
     unittest.main()

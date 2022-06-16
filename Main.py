@@ -23,7 +23,7 @@ def ContainsRange(range1, range2):
 def endPoints(range):
     max1 = max(range)
     min1 = min(range)
-    val = [max1, min1]
+    val = [min1 , max1]
     return val
 
 def overlapsRange():
