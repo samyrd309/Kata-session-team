@@ -1,7 +1,17 @@
-from re import A
+def integer_range_contains():
+    return
 
+def getAllPoint():
+    return
 
-class Programa:
-    def containt(a):
-        if a>2 and a<6:
-            return True
+def ContainsRange():
+    return
+
+def endPoints():
+    return
+
+def overlapsRange():
+    return
+
+def Equals():
+    return

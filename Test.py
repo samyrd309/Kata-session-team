@@ -1,9 +1,12 @@
+
 import unittest
-from Main import Programa
+import Main
 
 class TestMainMethods(unittest.TestCase):
     def test_interger_range_contains(self):
-         x = Programa.integer_range_contains(2)
+        range = [2,3,4,5]
+        val = [2,4]
+        output = 
         
     
     
