@@ -6,10 +6,13 @@ def integer_range_contains(range, val):
             return False
     
 
-def getAllPoint():
-    return
+def getAllPoint(range):
+    return range
 
-def ContainsRange():
+def ContainsRange(range1, range2):
+    max1 = max(range1)
+    max2 = max(range2)
+    
     return
 
 def endPoints():
