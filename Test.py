@@ -70,10 +70,28 @@ class TestMainMethods(unittest.TestCase):
         self.assertEqual(output, [3,6])
     
     def test_Equals_1(self):
-        range1 = []
-        range2 = []
+        range1 = [3,4]
+        range2 = [3,4]
         output =  Main.Equals(range1, range2)
         self.assertTrue(output)
+
+    def test_Equals_2(self):
+        range1 = [2,3,4,5,6,7,8,9]
+        range2 = [3,4]
+        output =  Main.Equals(range1, range2)
+        self.assertFalse(output)
+
+    def test_Equals_3(self):
+        range1 = [2,3,4]
+        range2 = [3,4,5,6,7,8,9]
+        output =  Main.Equals(range1, range2)
+        self.assertFalse(output)
+    
+    def test_Equals_4(self):
+        range1 = [3,4]
+        range2 = [2,3,4,5,6,7,8,9]
+        output =  Main.Equals(range1, range2)
+        self.assertFalse(output)
         
 if __name__ == '__main__':
     unittest.main()
