@@ -9,24 +9,27 @@ class TestMainMethods(unittest.TestCase):
         y = "{2,4}"
         output = Main.integer_range_contains(program.CreateRange(x),program.CreateRange(y))
         self.assertTrue(output)
-'''
+
     def test_interger_range_contains_2(self):
-        range = [2,3,4,5]
-        val = [-1,1,6,10]
-        output = Main.integer_range_contains(range, val)
-        self.assertFalse(output)
-    
-    def test_get_all_ppints(self):
-        range = [2,3,4,5]
-        output = Main.getAllPoint(range)
-        self.assertEqual(range,  [2,3,4,5])
-        
-    def test_ContainsRange_1(self):
-        range1 = [2,3,4]
-        range2 = [7,8,9]
-        output = Main.ContainsRange(range1, range2)
+        program = Main
+        x = "[2,6)"
+        y = "{-1,1,6,10}"
+        output = Main.integer_range_contains(program.CreateRange(x),program.CreateRange(y))
         self.assertFalse(output)
 
+    def test_get_all_ppints(self):
+        program = Main
+        x = "[2,6)"
+        output = Main.getAllPoint(program.CreateRange(x))
+        self.assertEqual(output,  [2,3,4,5])
+      
+    def test_ContainsRange_1(self):
+        program = Main
+        x = program.CreateRange("[2,5)")
+        y = program.CreateRange("[7,10)")
+        output = Main.ContainsRange(x, y)
+        self.assertFalse(output)
+'''      
     def test_ContainsRange_2(self):
         range1 = [2,3,4]
         range2 = [3,4,5,6,7,8,9]

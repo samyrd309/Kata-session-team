@@ -1,14 +1,17 @@
 from array import array
 import re 
 def CreateRange(x):
-
     y =[i for i in re.split('(-?\d+\.?\d*)',x) if i !='']
     print(y)
-    range = [int(m) for m in y if m.isdigit]
+    range = [int(m) for m in y if m.isdigit()]
     if y[0] == '(':
         v1 = range[0] + 1 
+    else:
+        v1 = range[0]
     if y[-1] == ']':
         v2 = range[1] + 1
+    else:
+        v2 = range[1]
     output=[v1,v2]
     return output 
 
@@ -28,7 +31,7 @@ def getAllPoint(inputrange):
 
 def ContainsRange(arr1, arr2):
     arr1 = [i for i in range(arr1[0], arr1[1])]
-    arr2 = [i for i in range(arr2[0], arr1[1])]
+    arr2 = [j for j in range(arr2[0], arr1[1])]
     if max(arr2) > max(arr1) or min(arr2)<min(arr1):
         return False
     else :
