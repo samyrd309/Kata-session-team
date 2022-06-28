@@ -6,8 +6,13 @@ def CreateRange(x):
     range = [int(m) for m in y if m.isdigit]
     if y[0] == '(':
         v1 = range[0] + 1
+    else: 
+        v1 = range[0]
+
     if y[-1] == ']':
         v2 = range[1] + 1
+    else:
+        v2 = range[1]   
     output=[v1,v2]
     return output 
 
