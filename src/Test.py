@@ -1,15 +1,15 @@
 
 import unittest
-import src.Main as Main
+import Main
 
 class TestMainMethods(unittest.TestCase):
     def test_interger_range_contains_1(self):
         program = Main
-        x= program.CreateRange()
-        y = program.CreateRange()
-        output = Main.integer_range_contains(x,y)
-        self.assertTrue(output,[2,5])
-
+        x = "[2,6)"
+        y = "{2,4}"
+        output = Main.integer_range_contains(program.CreateRange(x),program.CreateRange(y))
+        self.assertTrue(output)
+'''
     def test_interger_range_contains_2(self):
         range = [2,3,4,5]
         val = [-1,1,6,10]
@@ -93,6 +93,7 @@ class TestMainMethods(unittest.TestCase):
         range2 = [2,3,4,5,6,7,8,9]
         output =  Main.Equals(range1, range2)
         self.assertFalse(output)
+'''
         
 if __name__ == '__main__':
     unittest.main()

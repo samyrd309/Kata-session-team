@@ -2,5 +2,5 @@ from pip import main
 import Main
 
 program = Main
-
-program.CreateRange()
+x = "[2,6)"
+program.CreateRange(x)
