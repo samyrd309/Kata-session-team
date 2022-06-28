@@ -1,20 +1,4 @@
-from array import array
-import re 
-def CreateRange():
-    x= input()
-
-    y =[i for i in re.split('(-?\d+\.?\d*)',x)if i!='']
-
-    range = [in(m int)]
-    
-    
-    output = ''
-    if y[0] == '(':
-        v1 = y[1] + 1 
-
-
-
-
+import re
 def integer_range_contains(range, val):
     for i in range:
         if range[i] in val:
@@ -51,3 +35,7 @@ def Equals(range1, range2):
 
 def overlapsRange():
     return
+
+
+
+    
