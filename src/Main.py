@@ -1,3 +1,14 @@
+def CreateRange():
+    x= input()
+    
+    
+    output = ''
+    if y[0] == '(':
+        v1 = y[1] + 1 
+
+
+
+
 def integer_range_contains(range, val):
     for i in range:
         if range[i] in val:
@@ -34,7 +45,3 @@ def Equals(range1, range2):
 
 def overlapsRange():
     return
-
-
-
-    

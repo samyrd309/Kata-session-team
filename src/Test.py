@@ -1,6 +1,6 @@
 
 import unittest
-import Main
+import src.Main as Main
 
 class TestMainMethods(unittest.TestCase):
     def test_interger_range_contains_1(self):
