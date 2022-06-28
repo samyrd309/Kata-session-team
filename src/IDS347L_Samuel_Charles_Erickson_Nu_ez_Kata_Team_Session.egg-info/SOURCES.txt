@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+src/IDS347L_Samuel_Charles_Erickson_Nu_ez_Kata_Team_Session.egg-info/PKG-INFO
+src/IDS347L_Samuel_Charles_Erickson_Nu_ez_Kata_Team_Session.egg-info/SOURCES.txt
+src/IDS347L_Samuel_Charles_Erickson_Nu_ez_Kata_Team_Session.egg-info/dependency_links.txt
+src/IDS347L_Samuel_Charles_Erickson_Nu_ez_Kata_Team_Session.egg-info/requires.txt
+src/IDS347L_Samuel_Charles_Erickson_Nu_ez_Kata_Team_Session.egg-info/top_level.txt
