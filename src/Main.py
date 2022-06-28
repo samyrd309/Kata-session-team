@@ -5,26 +5,27 @@ def CreateRange():
 
     y =[i for i in re.split('(-?\d+\.?\d*)',x)if i !='']
     print(y)
-    range = [int(m) for m in x.isdigit()]
+    range = [int(m) for m in y if m.isdigit]
     if y[0] == '(':
-        v1 = y[1] + 1 
+        v1 = range[0] + 1 
     if y[-1] == ')':
-        v2 = y[3] + 1
+        v2 = range[1] + 1
+    output=[v1,v2]
+    return output 
 
-    return v1, v2
 
 
-
-def integer_range_contains(range, val):
-    for i in range:
-        if range[i] in val:
+def integer_range_contains(defaultrange, inputrange):
+    defaultrange = [i for i in range(defaultrange[0], defaultrange[1])]
+    for i in defaultrange:
+        if defaultrange[i] in inputrange:
             return True
         else:
             return False
     
 
-def getAllPoint(range):
-    return range
+def getAllPoint(inputrange):
+    return inputrange
 
 def ContainsRange(range1, range2):
     max1 = max(range1)
