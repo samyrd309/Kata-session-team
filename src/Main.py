@@ -3,15 +3,15 @@ import re
 def CreateRange():
     x= input()
 
-    y =[i for i in re.split('(-?\d+\.?\d*)',x)if i!='']
-
-    range = [in(m int)]
-    
-    
-    output = ''
+    y =[i for i in re.split('(-?\d+\.?\d*)',x)if i !='']
+    print(y)
+    range = [int(m) for m in x.isdigit()]
     if y[0] == '(':
         v1 = y[1] + 1 
+    if y[-1] == ')':
+        v2 = y[3] + 1
 
+    return v1, v2
 
 
 
