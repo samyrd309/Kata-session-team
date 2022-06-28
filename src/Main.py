@@ -25,30 +25,28 @@ def integer_range_contains(defaultrange, inputrange):
     
 
 def getAllPoint(inputrange):
-    return inputrange
+    return [i for i in range(inputrange[0], inputrange[1])]
 
-def ContainsRange(range1, range2):
-    max1 = max(range1)
-    max2 = max(range2)
-    min1 = min(range1)
-    min2 = min(range2)
-    if max2 > max1 or min2<min1:
+def ContainsRange(arr1, arr2):
+    arr1 = [i for i in range(arr1[0], arr1[1])]
+    arr2 = [i for i in range(arr2[0], arr1[1])]
+    if max(arr2) > max(arr1) or min(arr2)<min(arr1):
         return False
     else :
         return True
     
 
-def endPoints(range):
-    max1 = max(range)
-    min1 = min(range)
-    val = [min1 , max1]
-    return val
+def endPoints(inputrange):
+    x = [i for i in range(inputrange[0], inputrange[1])]
+    valMax = max(x)
+    valMin = min(x)
+    return valMax, valMin
 
-def Equals(range1, range2):
-    if range1 == range2:
+def Equals(inputrange1, inputrange2):
+    arr1 = [i for i in range(inputrange1[0], inputrange1[1])]
+    arr2 = [i for i in range(inputrange2[0], inputrange2[1])]
+    if arr1 == arr2:
         return True
     else:
         return False
 
-def overlapsRange():
-    return
