@@ -4,10 +4,11 @@ import src.Main as Main
 
 class TestMainMethods(unittest.TestCase):
     def test_interger_range_contains_1(self):
-        range = [2,3,4,5]
-        val = [2,4]
-        output = Main.integer_range_contains(range, val)
-        self.assertTrue(output)
+        program = Main
+        x= program.CreateRange()
+        y = program.CreateRange()
+        output = Main.integer_range_contains(x,y)
+        self.assertTrue(output,[2,5])
 
     def test_interger_range_contains_2(self):
         range = [2,3,4,5]
