@@ -31,7 +31,7 @@ def getAllPoint(inputrange):
 
 def ContainsRange(arr1, arr2):
     arr1 = [i for i in range(arr1[0], arr1[1])]
-    arr2 = [j for j in range(arr2[0], arr1[1])]
+    arr2 = [j for j in range(arr2[0], arr2[1])]
     if max(arr2) > max(arr1) or min(arr2)<min(arr1):
         return False
     else :
